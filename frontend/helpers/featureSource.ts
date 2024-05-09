@@ -1,0 +1,40 @@
+import { CardIcon, DocIcon, WalletIcon } from "@/constants/svg";
+
+export const featureSource = [
+  {
+    icon: WalletIcon,
+    title: "Social Savings Pools",
+    subtitle:
+      "Chamaa is a social savings pool where individuals come together to save collectively, fostering a sense of community and financial cooperation.",
+  },
+  {
+    icon: DocIcon,
+    title: "Goal-Oriented Savings",
+    subtitle:
+      "VunaVault encourages disciplined saving by allowing users to set specific savings goals. Achieving these goals unlocks exclusive benefits and rewards.",
+  },
+  {
+    icon: CardIcon,
+    title: "Social Savings Pools",
+    subtitle:
+      "Users customize their insurance plans based on purpose, coverage length, and other factors. This product empowers users to protect against unforeseen circumstances on their terms",
+  },
+  {
+    icon: WalletIcon,
+    title: "Peer-to-Peer Insurance Pool",
+    subtitle:
+      "Chamaa is a social savings pool where individuals come together to save collectively, fostering a sense of community and financial cooperation.",
+  },
+  {
+    icon: DocIcon,
+    title: "Inclusive Savings, Exclusive Futures",
+    subtitle:
+      "VunaVault encourages disciplined saving by allowing users to set specific savings goals. Achieving these goals unlocks exclusive benefits and rewards.",
+  },
+  {
+    icon: CardIcon,
+    title: "Email tracking",
+    subtitle:
+      "Users customize their insurance plans based on purpose, coverage length, and other factors. This product empowers users to protect against unforeseen circumstances on their terms",
+  },
+];
