@@ -10,7 +10,7 @@ const Team = () => {
       <h2 className="text-black text-center text-3xl xsm:text-[40px] font-bold my-5">
       Meet The Team  Building Hifadhi
       </h2>
-      <article className="grid grid-cols-1 xsm:grid-cols-2 md:grid-cols-4 gap-2 mt-10">
+      <article className="grid grid-cols-1 xsm:grid-cols-2 md:grid-cols-4 gap-2 mt-10 content-center">
         {teamSource.map((element, index) => {
           return (
             <div key={index} className="flex flex-col items-center justify-around">
