@@ -1,0 +1,32 @@
+type JoinedPool @entity(immutable: true) {
+  id: Bytes!
+  poolId: BigInt! # uint256
+  participant: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type PoolCreated @entity(immutable: true) {
+  id: Bytes!
+  poolId: BigInt! # uint256
+  owner: Bytes! # address
+  name: String! # string
+  maxParticipants: BigInt! # uint256
+  contributionPerParticipant: BigInt! # uint256
+  durationPerTurn: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type TurnClaimed @entity(immutable: true) {
+  id: Bytes!
+  poolId: BigInt! # uint256
+  turnId: BigInt! # uint256
+  participant: Bytes! # address
+  amount: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}

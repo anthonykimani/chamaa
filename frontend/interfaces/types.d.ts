@@ -18,16 +18,18 @@ export interface Pool {
 export interface PoolDetails {
   owner: string;
   name: string;
-  userTurnAddress: string;
+  userTurnAddress:string;
   contributionPerParticipant: number;
   maxParticipants: number;
   durationPerTurn: number;
   currentTurn: number;
   active: boolean;
   participants: string[];
-  _poolBalance: number;
+  _poolBalance:number;
   isRestrictedPool: boolean;
-  userContibutionNumber: number;
+  userContibutionNumber:number;  
   startTime: number;
   poolID: number;
 }
+
+

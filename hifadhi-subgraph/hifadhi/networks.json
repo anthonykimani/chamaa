@@ -1,0 +1,8 @@
+{
+  "celo": {
+    "ChamaPool": {
+      "address": "0x677b34EBd5537784814625613C4E8B66a8f64978",
+      "startBlock": 22528134
+    }
+  }
+}

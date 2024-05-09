@@ -1,0 +1,30 @@
+specVersion: 0.0.5
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: ChamaPool
+    network: celo
+    source:
+      address: "0x677b34EBd5537784814625613C4E8B66a8f64978"
+      abi: ChamaPool
+      startBlock: 22528134
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - JoinedPool
+        - PoolCreated
+        - TurnClaimed
+      abis:
+        - name: ChamaPool
+          file: ./abis/ChamaPool.json
+      eventHandlers:
+        - event: JoinedPool(uint256,address)
+          handler: handleJoinedPool
+        - event: PoolCreated(uint256,address,string,uint256,uint256,uint256)
+          handler: handlePoolCreated
+        - event: TurnClaimed(uint256,uint256,address,uint256)
+          handler: handleTurnClaimed
+      file: ./src/chama-pool.ts
