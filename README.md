@@ -47,7 +47,7 @@ https://share.vidyard.com/watch/tsfog7C9TCzBysn3VR6KqA?
 
  ### Installation Process
  ****
-* Clone to the repo : git clone hhttps://github.com/DennohKim/social-saving-pool-bwc4
+* Clone to the repo : git clone hhttps://github.com/anthonykimani/social-saving-pool
 * In the root directory, run the following command to install the packages ``` yarn```.
 * Run `yarn react-app:dev` to launch the app
 
